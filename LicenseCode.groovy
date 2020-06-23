@@ -37,8 +37,8 @@ userUtil.getUsers().each{ u ->
     def json= '''{ "items": '''+ lstjson +''' }'''
     log.warn("json"+json)
 
-  //  File file = new File("//cifs//EEHQ//licenses.json")
-  //  file.write(json)
+  File file = new File("//yourServerPath//licenses.json")
+  file.write(json)
 }
 
 return licenses
